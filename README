@@ -1,0 +1,9 @@
+public synchronized Set<String> remote_connection_uuids()
+15	    {
+16	        return connection_map.keySet();
+…	
+29	    public synchronized IConnection remove_connection(String remote_host_uuid)
+30	    {
+31	        return connection_map.remove(remote_host_uuid);
+32	    }
+33	}
